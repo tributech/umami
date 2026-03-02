@@ -1,6 +1,0 @@
-neon_api_key  = "your-neon-api-key"
-neon_org_id   = "your-neon-org-id"
-project_name  = "umami"
-region_id     = "aws-us-east-1"
-pg_version    = 17
-database_name = "umami"
