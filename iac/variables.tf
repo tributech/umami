@@ -4,6 +4,11 @@ variable "neon_api_key" {
   sensitive   = true
 }
 
+variable "neon_org_id" {
+  description = "Neon organization ID"
+  type        = string
+}
+
 variable "project_name" {
   description = "Neon project name"
   type        = string
