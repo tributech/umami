@@ -43,3 +43,9 @@ yarn-error.log*
 
 *.dev.yml
 
+# terraform
+iac/.terraform/
+iac/*.tfstate*
+iac/*.tfvars
+!iac/terraform.tfvars.example
+
