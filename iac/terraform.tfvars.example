@@ -4,4 +4,3 @@ project_name  = "umami"
 region_id     = "aws-us-east-1"
 pg_version    = 17
 database_name = "umami"
-role_name     = "umami"

@@ -33,15 +33,9 @@ resource "neon_project" "umami" {
   }
 }
 
-resource "neon_role" "umami" {
-  project_id = neon_project.umami.id
-  branch_id  = neon_project.umami.default_branch_id
-  name       = var.role_name
-}
-
 resource "neon_database" "umami" {
   project_id = neon_project.umami.id
   branch_id  = neon_project.umami.default_branch_id
   name       = var.database_name
-  owner_name = neon_role.umami.name
+  owner_name = neon_project.umami.database_user
 }

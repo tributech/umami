@@ -18,14 +18,3 @@ output "database_name" {
   description = "Database name"
   value       = neon_database.umami.name
 }
-
-output "role_name" {
-  description = "Database role name"
-  value       = neon_role.umami.name
-}
-
-output "role_password" {
-  description = "Database role password"
-  value       = neon_role.umami.password
-  sensitive   = true
-}

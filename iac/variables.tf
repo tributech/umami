@@ -32,9 +32,3 @@ variable "database_name" {
   type        = string
   default     = "umami"
 }
-
-variable "role_name" {
-  description = "Name of the database role to create"
-  type        = string
-  default     = "umami"
-}
